@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Page title</title>
     <style>
         ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #e6e6e6ec;
-}
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #e6e6e6ec;
+        }
 
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
 
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+        }
 
+        li a:hover:not(.active) {
+            background-color: #40f5ff;
+        }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-}
+        .active {
+            background-color: #ff40fc;
+        }
 
-li a:hover:not(.active) {
-  background-color: #40f5ff;
-}
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            color: red;
+        }
 
-.active {
-  background-color: #ff40fc;
-}
-        h1{
-text-align: center;
-    font-size: 60px;
-    color: red;}
-  input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
 
-div {
-  background-color: #f2f2f2;
-  padding: 3px;
-}
-        
-      
-.container {
-  height: 100px;
-  position: relative;
-  .center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);}
-  
+        div {
+            background-color: #f2f2f2;
+            padding: 3px;
+        }
+
+        .container {
+            height: 100px;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
-      <ul>
-  <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/index.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700367464/gmaalrsjcthn8ynnpxjd.svg" width="64.5" height="20"></a></li>
-  <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/Booking.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700368996/qpwfar4quabizkgo2mle.svg" width="64.5" height="20"></a></li>
-  <li class="active"><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/VehicleIDTracking.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700367464/ezktjemyaapdpzsfv7ih.svg" width="64.5" height="20"></a></li>
-  <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/Registration.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700368995/w4t3fo325hi5biaekdn3.svg" height="20" width="64.5"></a></li>
-  <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/RegistrationSuccess.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700367464/ae7zalufgtnjt8o0w5ti.svg" height="20" width="64.5"></a></li>
-</ul>
-<hr>
+    <ul>
+        <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/index.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700367464/gmaalrsjcthn8ynnpxjd.svg" width="64.5" height="20"></a></li>
+        <li class="active"><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/Booking.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700368996/qpwfar4quabizkgo2mle.svg" width="64.5" height="20"></a></li>
+        <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/VehicleIDTracking.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700367464/ezktjemyaapdpzsfv7ih.svg" width="64.5" height="20"></a></li>
+        <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/Registration.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700368995/w4t3fo325hi5biaekdn3.svg" height="20" width="64.5"></a></li>
+        <li><a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/RegistrationSuccess.html"><img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1700367464/ae7zalufgtnjt8o0w5ti.svg" height="20" width="64.5"></a></li>
+    </ul>
+    <hr>
     <form>
-    <label for="tid">Tracking ID:</label><br>
-       <input type="text" id="tid" name="tracking"><br>
-       <br><br>
+        <label for="tid">Tracking ID:</label><br>
+        <input type="text" id="tid" name="tracking"><br><br>
         <div class="container">
-           <div class="center">
-     <button class="b1"><a  href="window.location.href='https://charansaiparvathala.github.io/HTML-CSS-Projects/VehicleLocation.html" target="_blank"></a><input type="submit" value="submit"></button>
- </div> </div></form>
-
-
+            <div class="center">
+                <a href="https://charansaiparvathala.github.io/HTML-CSS-Projects/VehicleLocation.html" class="b1">
+                    <input type="submit" value="Submit">
+                </a>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
