@@ -26,7 +26,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 12px;
+ /* padding: 10px 12px;*/
   text-decoration: none;
 }
 li a:hover:not(.active) {
@@ -37,7 +37,7 @@ li a:hover:not(.active) {
   background-color: #ff40fc;
 }
 
-@media (min-width: 600px) {
+
 ul{
     display: flex;
     width: 100%;
@@ -48,11 +48,30 @@ li {
   }
 
     li a {
-      padding: 20px 8px; /* Adjust padding for larger icons on mobile */
+      padding: 20px 12px; /* Adjust padding for larger icons on mobile */
    max-width: 100%;
     }
 li a img {
     max-width: 100%;
+    height: auto;
+  }
+
+@media (max-width: 600px) {
+ul{
+    display: auto;
+    width: auto;
+  }
+
+li {
+    flex-grow: 0;
+  }
+
+    li a {
+      padding: 20px 12px; /* Adjust padding for larger icons on mobile */
+   max-width: auto;
+    }
+li a img {
+    max-width: auto;
     height: auto;
   }
   }
@@ -171,7 +190,7 @@ li a img {
     <button class="b1 r" onclick="document.location='file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/rej3.html'">Reject</button>
     </div></div>
 
-<h1>9</h1>
+<h1>10</h1>
   
 </body>
 </html>
