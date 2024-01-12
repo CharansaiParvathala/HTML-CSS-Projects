@@ -37,7 +37,7 @@
   }
 
 
-ul {
+/*ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -65,7 +65,38 @@ ul {
 
   .active {
     background-color: #ff40fc;
+  }*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e6e6e6ec;
+    text-align: center;
   }
+
+  li {
+    display: block;
+    border-bottom: 1px solid #bbb; /* Change to border-bottom for vertical separation */
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for better mobile view */
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #40f5ff;
+  }
+
+  .active {
+    background-color: #ff40fc;
+  }
+
     </style>
 </head>
 <body>
