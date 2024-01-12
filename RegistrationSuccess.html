@@ -81,20 +81,20 @@ li a:hover:not(.active) {
 
 
   
-  /*2*/
+  /*3*/
+  
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #e6e6e6ec;
-    width: 100vw; /* Make the navigation bar full-width */
+    display: flex;
+    width: 100%;
   }
 
   li {
-    display: inline-block;
-    border-right: 1px solid #bbb;
-    margin-right: 2vw; /* Adjust spacing between menu items based on viewport width */
+    flex-grow: 1;
   }
 
   li a {
@@ -119,10 +119,6 @@ li a:hover:not(.active) {
   }
 
   @media (max-width: 600px) {
-    li {
-      margin-right: 5px; /* Adjust spacing between menu items for smaller screens */
-    }
-
     li a {
       padding: 20px 8px; /* Adjust padding for larger icons on mobile */
     }
@@ -159,6 +155,8 @@ li a:hover:not(.active) {
         <button class="b1 a" onclick="document.location='file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/acc3.html'">Accept</button>
     <button class="b1 r" onclick="document.location='file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/rej3.html'">Reject</button>
     </div></div>
+
+<h1>1</h1>
   
 </body>
 </html>
