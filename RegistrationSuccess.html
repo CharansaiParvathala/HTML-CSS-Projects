@@ -38,10 +38,23 @@ li a:hover:not(.active) {
 }
 
 @media (max-width: 600px) {
+ul{
+    display: flex;
+    width: 100%;
+  }
+
+li {
+    flex-grow: 1;
+  }
+
     li a {
       padding: 20px 8px; /* Adjust padding for larger icons on mobile */
-   max-width: auto;
+   max-width: 100%;
     }
+li a img {
+    max-width: 100%;
+    height: auto;
+  }
   }
 
 
@@ -100,9 +113,7 @@ li a:hover:not(.active) {
     width: 100%;
   }
 
-  li {
-    flex-grow: 1;
-  }
+  
 
   li a {
     display: block;
