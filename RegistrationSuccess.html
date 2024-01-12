@@ -9,6 +9,8 @@
         display: inline-block; background-color: #7b38d8; padding: 10px; width: 190px; color: #ffffff; text-align: center; border: 4px double #cccccc; border-radius: 10px; font-size: 20px; cursor: pointer; margin: 5px; 
       }
 
+@media (min-width: 600px)
+{
 ul {
   list-style-type: none;
   margin: 0;
@@ -55,25 +57,39 @@ li a img {
     max-width: 100%;
     height: auto;
   }
+}
 
 @media (max-width: 600px) {
-ul{
-    display: auto;
-    width: auto;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e6e6e6ec;
+}
 
 li {
-    flex-grow: 0;
-  }
+  float: left;
+  border-right:1px solid #bbb;
+}
 
-    li a {
-      padding: 20px 12px; /* Adjust padding for larger icons on mobile */
-   max-width: auto;
-    }
-li a img {
-    max-width: auto;
-    height: auto;
-  }
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #40f5ff;
+}
+
+.active {
+  background-color: #ff40fc;
+}
   }
 
 
