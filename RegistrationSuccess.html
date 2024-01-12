@@ -81,20 +81,20 @@ li a:hover:not(.active) {
 
 
   
-  /*1*/
+  /*2*/
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #e6e6e6ec;
-    width: 100%; /* Make the navigation bar full-width */
+    width: 100vw; /* Make the navigation bar full-width */
   }
 
   li {
     display: inline-block;
     border-right: 1px solid #bbb;
-    margin-right: 10px; /* Adjust spacing between menu items */
+    margin-right: 2vw; /* Adjust spacing between menu items based on viewport width */
   }
 
   li a {
@@ -119,8 +119,12 @@ li a:hover:not(.active) {
   }
 
   @media (max-width: 600px) {
+    li {
+      margin-right: 5px; /* Adjust spacing between menu items for smaller screens */
+    }
+
     li a {
-      padding: 20px 10px; /* Adjust padding for larger icons on mobile */
+      padding: 20px 8px; /* Adjust padding for larger icons on mobile */
     }
   }
 
