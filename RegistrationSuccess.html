@@ -78,6 +78,9 @@ li a:hover:not(.active) {
 .r {background-color: #f44336;}
 
 
+
+
+  
   ul {
     list-style-type: none;
     margin: 0;
@@ -85,6 +88,7 @@ li a:hover:not(.active) {
     overflow: hidden;
     background-color: #e6e6e6ec;
     text-align: center;
+    width: 100%; /* Make the navigation bar full-width */
   }
 
   li {
@@ -96,13 +100,13 @@ li a:hover:not(.active) {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 12px;
+    padding: 20px 12px; /* Increase padding for larger icons */
     text-decoration: none;
   }
 
   li a img {
-    max-width: 100%; /* Make sure the images don't exceed their container */
-    height: auto; /* Maintain aspect ratio of images */
+    max-width: 100%;
+    height: auto;
   }
 
   li a:hover:not(.active) {
@@ -115,7 +119,7 @@ li a:hover:not(.active) {
 
   @media (max-width: 600px) {
     li a {
-      padding: 15px 10px; /* Adjust padding for larger icons on mobile */
+      padding: 20px 10px; /* Adjust padding for larger icons on mobile */
     }
   }
 
