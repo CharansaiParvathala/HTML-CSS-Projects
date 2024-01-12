@@ -32,26 +32,23 @@ ul {
 }
 
 li {
-  width: 100%;
+  float: left;
+  border-right:1px solid #bbb;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 12px;
   text-decoration: none;
 }
+li a:hover:not(.active) {
+  background-color: #40f5ff;
+}
 
-@media only screen and (min-width: 600px) {
-  li {
-    display: inline-block;
-    width: auto;
-  }
-
-  li a {
-    padding: 10px 12px;
-  }
+.active {
+  background-color: #ff40fc;
 }
 
 
