@@ -77,7 +77,8 @@ li a:hover:not(.active) {
 .a{background-color: green;} 
 .r {background-color: #f44336;}
 
-ul {
+
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -87,16 +88,21 @@ ul {
   }
 
   li {
-    display: block;
-    border-bottom: 1px solid #bbb; /* Change to border-bottom for vertical separation */
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between menu items */
   }
 
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 0; /* Adjust padding for better mobile view */
+    padding: 10px 12px;
     text-decoration: none;
+  }
+
+  li a img {
+    max-width: 100%; /* Make sure the images don't exceed their container */
+    height: auto; /* Maintain aspect ratio of images */
   }
 
   li a:hover:not(.active) {
@@ -105,6 +111,12 @@ ul {
 
   .active {
     background-color: #ff40fc;
+  }
+
+  @media (max-width: 600px) {
+    li a {
+      padding: 15px 10px; /* Adjust padding for larger icons on mobile */
+    }
   }
 
     </style>
